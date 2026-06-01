@@ -12,7 +12,18 @@ To write a Python program that handles an **IndexError** when trying to access a
 
 ## 🧾 Program
 Add code here
+numbers = [10, 20, 30, 40, 50]
+
+try:
+    index = int(input("Enter the index to access: "))
+    print("Element at index", index, "is", numbers[index])
+except IndexError:
+    print("Error: Index out of range. The list has", len(numbers), "elements.")
+
 
 ## Output
+Enter the index to access: 7
+Error: Index out of range. The list has 5 elements.
 
 ## Result
+Hence the output is verified
